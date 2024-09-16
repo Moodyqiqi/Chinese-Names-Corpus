@@ -1,36 +1,107 @@
 # 中文人名语料库（Chinese-Names-Corpus）
-业余项目“萌名（一个基于语料库技术的取名工具）”的副产品。不定期更新。只删词，不加词。</br>
-可用于中文分词、人名识别。
 
-<strong>中文常见人名（Chinese_Names_Corpus）</strong></br>
-120万。从亿级人名语料中提取。删除了罕见姓氏、和带生僻字的人名。随机删除了部分名人姓名（一点点小私心）。
+<strong>关于萌名（NameMoe）</strong>
 
-<strong>中文古代人名（Ancient_Names_Corpus）</strong></br>
-25万。多个人名词典汇总。删除了罕见姓氏、和带生僻字的人名。
+萌名是一个基于大数据和自然语言处理技术的新取名产品。
 
-<strong>日文人名（Japanese_Names_Corpus）</strong></br>
-18万。从维基百科中提取。删除了罕见姓氏、和带生僻字的人名。</br>
-数据清洗过程相见，“[日本人名数据清洗分享](https://github.com/wainshine/Chinese-Names-Corpus/issues/4)”。
+通过分词工具对海量文本进行分词和词频统计。数据清洗后，得到千万级的人名词典。再对其进行性别、年龄、拼音、情感、人名指数等标记，最终形成5600万+的中文人名图谱。
 
-<strong>翻译人名（English_Cn_Name_Corpus）</strong></br>
-48万。多个人名词典汇总。删除了翻译人名常用字之外的人名。混有少量西化中文人名，如“李伯恩”。清洗后仍存有少量badcase，尤其是英文地名。
-
-<strong>中文姓氏（Chinese_Family_Name）</strong></br>
-1千。从亿级人名语料中提取。删除了罕见姓氏，复姓只保留了“欧阳”。
-
-<strong>中文称呼（Chinese_Relationship）</strong></br>
-5千。称呼词根。多个人名词典汇总。删除了部分带贬义的称呼。</br>
-18万。中文称呼。多个人名词典汇总。清洗后仍存有大量badcase。
-
-<strong>成语词典（ChengYu_Corpus）</strong></br>
-5万。多个成语词典汇总。
+本子项目可用于中文分词、人名识别等场景。
 
 ---
 
-<strong>请勿提交涉政issue：</strong>
+PS1：维护此项目，除个人兴趣外，主要是在此过程中，可通过任务驱动来不断学习和实践NLP、KG以及AI等相关前沿技术。
 
-惹不起呀，谢谢～</br>
-语料中还存有的，会在后续的更新中逐步删除掉。</br>
+PS2：正在找工作，求内部推荐～ 移动医疗/SaaS后台/人工智能方向的 高级产品经理一枚。
+
+PS3：请勿提交涉政issue，谢谢。
+
+PS4：如将本项目转存到国内的某平台，请设置成0积分下载，并保留GitHub链接。
+
+---
+
+<strong>中文常见人名（Chinese_Names_Corpus）</strong>
+
+数据大小：120万。
+
+语料来源：从亿级人名语料中提取。
+
+数据清洗：已清洗，但仍存有少量badcase。
+
+<strong>新增人名生成器。</strong>
+
+---
+
+<strong>中文古代人名（Ancient_Names_Corpus）</strong>
+
+数据大小：25万。
+
+语料来源：多个人名词典汇总。
+
+数据清洗：已清洗。
+
+---
+
+<strong>中文姓氏（Chinese_Family_Name）</strong>
+
+数据大小：1千。
+
+语料来源：从亿级人名语料中提取。
+
+数据清洗：已清洗。
+
+---
+
+<strong>中文称呼（Chinese_Relationship）</strong>
+
+数据大小：5千，称呼词根；18万，中文称呼。
+
+语料来源：多个人名词典汇总。
+
+数据清洗：已清洗，但仍存有大量badcase。
+
+---
+
+# 英文人名语料库（English-Names-Corpus）
+<strong>翻译人名（English_Cn_Name_Corpus）</strong>
+
+数据大小：48万。
+
+语料来源：多个人名词典汇总。
+
+数据清洗：已清洗，但仍存有少量badcase，以地名居多。
+
+本语料的人名识别由网友 “[ltccss](https://github.com/ltccss)” 友情提供。
+
+---
+
+# 日文人名语料库（Japanese_Names_Corpus）
+<strong>日文人名（Japanese_Names_Corpus）</strong>
+
+数据大小：18万。
+
+数据来源：从维基百科中提取。
+
+数据清洗：已清洗，但仍存有少量badcase。
+
+数据清洗过程详见：“[日本人名数据清洗分享](https://github.com/wainshine/Chinese-Names-Corpus/issues/4)”。
+
+---
+
+# 中文词典语料库（Chinese_Dict_Corpus）
+<strong>成语词典（ChengYu_Corpus）</strong>
+
+数据大小：5万。
+
+语料来源：多个成语词典汇总。
+
+数据清洗：已清洗。
+
+---
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/wainshine/Chinese-Names-Corpus.svg)](https://starchart.cc/wainshine/Chinese-Names-Corpus)
 
 ---
 
@@ -50,8 +121,20 @@
 
 删除了2600余非人名、或低频人名。 -2019.04.15
 
+删除了约1万余非人名、或低频人名。 -2019.07.27
+
+将文件移动到文件夹。 -2019.10.21
+
+新增人名生成器。 -2020.01.29
+
+删除了约6万余非人名、或低频人名。 -2020.12.13
+
+更新人名生成器。 -2021.11.22
+
+删除了约700余非人名、或低频人名。 -2022.11.30
+
 ---
 
-@萌名 整理
+@萌名NameMoe 整理
 
-2019.05.14
+2024.03.27
